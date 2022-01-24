@@ -3,14 +3,18 @@ body {
 }
 
 .navbar {
-    background-color: rgb(115, 161, 40);
+    background-color: rgb(122, 122, 122);
 }
 
 .quem-somos {
-    background-color: rgb(154, 248, 117);
+    background-color: rgb(154, 255, 115);
 }
 
 .margin {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
+}
+
+.parceiros {
+    background-color: rgb(228, 248, 117);
 }
