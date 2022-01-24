@@ -7,7 +7,7 @@ body {
 }
 
 .quem-somos {
-    background-color: rgb(154, 255, 115);
+    background-color: rgb(255, 206, 115);
 }
 
 .margin {
@@ -17,4 +17,9 @@ body {
 
 .parceiros {
     background-color: rgb(228, 248, 117);
+}
+
+.bg-footer {
+    background-color: black;
+    color: white;
 }
