@@ -5,8 +5,8 @@ console.log(numberOne + 2);
 var numberOne;
 */
 
-//Trabalhandd com var e 
-var firstName = "João";
+//Trabalhando com var e let 
+/*var firstName = "João";
 var lastName = "Souza";
 
 if(firstName === "João" ){
@@ -17,3 +17,12 @@ if(firstName === "João" ){
 }
 
 console.log(firstName, lastName);
+*/
+
+//Trabalhando com CONSTANTES
+
+const FIRST_NAME = "Stephany";
+//Não é valido
+//FIRST_NAME = "Julia";
+
+console.log(FIRST_NAME);
