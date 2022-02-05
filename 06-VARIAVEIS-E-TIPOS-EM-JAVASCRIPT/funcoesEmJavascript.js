@@ -72,3 +72,53 @@ const resultSub = calc(sub, 1, 2);
 
 console.log(resultSub); // Saida -1
 console.log(resultSoma); // Saida 3
+
+//************************************************* */
+
+// IF ELSE
+
+//3 EXEMPLOS DE USO DE IF ELSE COM A MESMA SOLUÇÃO
+
+//1º
+function numeroPositivo(num){
+    let resultado;
+    if (num < 0) {
+        resultado = false;
+    } else {
+        resultado = true;
+    }
+
+    return resultado;
+}
+
+numeroPositivo(2); // Saida true
+
+numeroPositivo(-9); // Saida false
+
+//2º
+
+function numeroPositivo(){
+    let resultado;
+
+    const ehNegativo = num < 0;
+
+    if (ehNegativo) {
+        resultado = false;
+    } else {
+        resultado = true;
+    }
+
+    return resultado;
+}
+
+//3º
+
+function numeroPositivo(num){
+    const ehNegativo = num < 0;
+
+    if (ehNegativo) {
+        return false;
+    }
+
+    return true;
+}
