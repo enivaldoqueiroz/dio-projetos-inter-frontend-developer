@@ -48,5 +48,27 @@ const soma3 = (
 
 console.log(soma3); // Saida 3
 
+//Função  CallBack
+/*
+Uma função passada como argumento para outra.
 
+Utilizando callbacks, você tem maior controle da ordem de chamadas.
+*/
 
+const calc = function(operador, num1, num2){
+    return operacao(num1, num2);
+}
+
+const soma = function(num1, num2){
+    return num1 + num2;
+}
+
+const sub = function(num1, num2){
+    return num1 + num2;
+}
+
+const resultSoma = calc(soma, 1, 2);
+const resultSub = calc(sub, 1, 2);
+
+console.log(resultSub); // Saida -1
+console.log(resultSoma); // Saida 3
