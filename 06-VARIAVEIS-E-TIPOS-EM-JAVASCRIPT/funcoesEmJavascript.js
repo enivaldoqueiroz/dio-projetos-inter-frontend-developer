@@ -139,3 +139,133 @@ function getAnimal(id){
 }
 
 getAnimal(1) // Saida cão
+
+//****************************************************** */
+
+//FOR 
+// Loop dentro de elementos iteraveis (array, strings)
+
+function multiplicaPorDois(arr){
+    let multiplicados = [];
+
+    for(let i = 0; i < arr.length; i++){
+        multiplicados.push(arr[i] * 2);
+    }
+
+    return multiplicados;
+}
+
+const meusNumeros = [2, 33, 456, 356, 40];
+
+multiplicaPorDois(meusNumeros);
+
+//Saida [4, 66, 912, 712,80]
+
+//FOR IN
+
+// Loop entre propriedades enumeráveis de um objeto.
+
+function forInExemplo(obj){
+    for(prop in obj){
+        console.log(prop);
+    }
+}
+
+const meuObjeto = {
+    nome: "João",
+    idade: "20",
+    cidade: "Salvador"
+}
+
+forInExemplo(meuObjeto);
+
+/* Saida
+    nome
+    idade
+    cidade
+*/ 
+
+function forInExemplo(obj){
+    for(prop in obj){
+        console.log(obj[prop]);
+    }
+}
+
+const meuObjeto = {
+    nome: "João",
+    idade: "20",
+    cidade: "Salvador"
+}
+
+forInExemplo(meuObjeto);
+
+/* Saida
+    João
+    20
+    Salvador
+*/ 
+
+// FOR OF
+
+/* Loop entre estruturas iteráveis (arrays, strings) */
+
+function logLetras(palavra){
+    for(letra of palavra){
+        console.log(letra);
+    }
+}
+
+const palavra = "abacaxi";
+
+console.log(palavra);
+
+// WHILE
+
+//Executa instruções até que a condição se torne falsa.
+
+function exemploWhile(){
+    let num = 0
+
+    while (num <= 5){
+        console.log(num);
+        num++;
+    }
+}
+
+exemploWhile()
+/**
+ * Saida
+ * 0
+ * 1
+ * 2
+ * 3
+ * 4
+ */
+
+// DO WHILE
+
+/* Executa instruções até que a condição 
+se torne falsa.
+
+Porém a primeira execução sempre ocorre.*/
+
+function exemploDoWhile(){
+    let num = 0;
+
+    do {
+        console.log(num);
+        num++;
+    } while(num <= 5)
+}
+
+exemploDoWhile()
+
+/**
+ * Saida
+ * 0
+ * 1
+ * 2
+ * 3
+ * 4
+ * 5
+ */
