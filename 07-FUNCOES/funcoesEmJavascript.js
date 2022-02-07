@@ -361,3 +361,54 @@ let bruno = retornaNomes.bind({ nome: 'Bruno'});
 
 bruno();
 // Saida Bruno
+
+// Sintaxe e outras restrições 
+
+// Arrow functions
+
+//Sem arrow functions
+const helloWord = function(){
+    return "Hello World";
+}
+
+//Faz amesmoa coisa da função em cima
+
+//Com arrow fonction
+const helloWorld = () => {
+    return "Hello World";
+}
+
+//Faz a mesma função em cima
+
+const helloWord = () => "Hello World";
+
+/*OBS.:
+    - Caso exista apenas uma linha, pode dispensar as chaves e o return.
+    - Cso exista apenas um parâmetro, pode dispensar os parênteses.
+*/
+
+//Com parenteses
+const soma = () => a + b;
+
+soma(4, 6);
+// Saida 10
+
+//Sem parenteses
+const soma = a => a;
+
+soma(4);
+
+// Saida 4
+
+/* OBS.: Arrow NÃO faz hoisting!
+
+*/
+
+// Função normal aceita hoisting
+soma(2, 4);
+
+function soma(a, b) {
+    return a + b;
+}
+
+// Arrow function não aceita hoisting
