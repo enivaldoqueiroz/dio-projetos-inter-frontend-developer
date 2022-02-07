@@ -269,3 +269,95 @@ exemploDoWhile()
  * 4
  * 5
  */
+
+
+// THIS
+
+/* A palavra reservada this é uma referencia de contexto
+
+No exemplo, this refere-se ao objeto pessoa*/
+
+const pessoa = {
+    firsName: "André",
+    lastName: "Soares",
+    id: 1,
+    fullName: function(){
+        return this.firsName + " " + this.lastName;
+    },
+    getId: function() {
+        return this.id;
+    }
+};
+
+pessoa.fullName();
+// Saida André Soares
+pessoa.getId();
+// Sainda 1
+
+// CALL
+
+const pessoa = {
+    nome : 'Miguel',
+};
+
+const animal = {
+    nome : 'Murphy',
+};
+
+function getSomething() {
+    console.log(this.nome);
+}
+
+getSomething.call(pessoa);
+// Saida Miguel
+
+getSomething.call(animal);
+// Saida Miguel
+
+//É possível passar parâmetros para essa função separando-os pro vírgulas.
+
+const myObj = {
+    num1: 2,
+    num2: 4,
+}
+
+function soma(a, b){
+    console.log(this.num1 + this.num2 + a + b);
+}
+
+soma.call(myObj, 1, 5);
+
+// Saida 12
+
+// APPLY
+
+const pessoa = {
+    nome : 'Miguel',
+};
+
+const animal = {
+    nome : 'Murphy',
+};
+
+function getSomething() {
+    console.log(this.nome);
+}
+
+getSomething.apply(pessoa);
+// Saida Miguel
+
+getSomething.apply(animal);
+// Saida Miguel
+
+// BIND
+
+/* Clona a estrutura da função onde é chamado e aplica o valor do objeto passado como parâmetro */
+
+const retornaNomes = function() {
+    return this.nome;
+};
+
+let bruno = retornaNomes.bind({ nome: 'Bruno'});
+
+bruno();
+// Saida Bruno
